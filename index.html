@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Bureau of Matrimonial Evaluation</title>
+<meta name="description" content="Official Fictional Matrimonial Assessment Portal — a satirical evaluation for entertainment purposes only." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ============ LANDING ============ -->
+  <section class="screen landing active" id="screen-landing">
+    <nav class="landing-nav">
+      <div class="landing-brand">
+        <div class="seal" style="--seal-size:38px" id="nav-seal"></div>
+        <span class="landing-brand-name">
+          <strong>Bureau of Matrimonial Evaluation</strong>
+          Official Fictional Assessment Portal
+        </span>
+      </div>
+      <button class="btn-icon" id="mute-toggle" aria-label="Toggle sound" title="Toggle sound">
+        <svg id="icon-sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M17 8a5 5 0 010 8"/></svg>
+        <svg id="icon-sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="display:none"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
+      </button>
+    </nav>
+
+    <div class="landing-hero">
+      <div class="seal landing-seal fade-up" id="hero-seal"></div>
+      <div class="eyebrow fade-up-1">Estd. Fictional · Applications Open</div>
+      <h1 class="fade-up-2">A rigorous, entirely <em>fictional</em> matrimonial evaluation.</h1>
+      <p class="lede fade-up-3">Answer a short official questionnaire. The Bureau will calculate your fictional market value, issue a certificate, and — most importantly — roast you with love.</p>
+
+      <div class="landing-cta-row fade-up-4">
+        <button class="btn btn-primary" id="btn-start-assessment">Begin Assessment →</button>
+        <span class="landing-meta">Takes about 2 minutes · 23 questions</span>
+      </div>
+    </div>
+
+    <div class="feature-strip">
+      <div class="feature-item fade-up-2">
+        <span class="eyebrow">01</span>
+        <h3>Comprehensive Filing</h3>
+        <p>Income, vehicles, degrees, habits, and hobbies — the Bureau leaves no biodata unturned.</p>
+      </div>
+      <div class="feature-item fade-up-3">
+        <span class="eyebrow">02</span>
+        <h3>Official Certificate</h3>
+        <p>A shareable certificate with your fictional value, rank, badge, and a roast crafted just for you.</p>
+      </div>
+      <div class="feature-item fade-up-4">
+        <span class="eyebrow">03</span>
+        <h3>Full Breakdown</h3>
+        <p>See exactly how every category contributed to your score, charted and itemized.</p>
+      </div>
+    </div>
+
+    <div class="disclaimer fade-up-4">
+      <span class="eyebrow">Notice</span>
+      <p>This assessment is purely satirical and intended for entertainment purposes only. All values, scores, certificates, badges, and evaluations are completely fictional and carry no real-world meaning.</p>
+    </div>
+  </section>
+
+  <!-- ============ WIZARD ============ -->
+  <section class="screen" id="screen-wizard"></section>
+
+  <!-- ============ PROCESSING ============ -->
+  <section class="screen processing" id="screen-processing"></section>
+
+  <!-- ============ RESULT ============ -->
+  <section class="screen result" id="screen-result"></section>
+
+  <!-- ============ BREAKDOWN ============ -->
+  <section class="screen breakdown" id="screen-breakdown"></section>
+
+  <footer class="site-footer">
+    <p>© 2026 SrayiX • Bureau of Matrimonial Evaluation</p>
+    <p>For entertainment purposes only.</p>
+  </footer>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

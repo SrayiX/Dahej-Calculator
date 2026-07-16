@@ -1,0 +1,66 @@
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp var(--dur-slow) var(--ease-out) forwards; }
+.fade-up-1 { animation: fadeUp var(--dur-slow) var(--ease-out) 80ms forwards; opacity: 0; }
+.fade-up-2 { animation: fadeUp var(--dur-slow) var(--ease-out) 160ms forwards; opacity: 0; }
+.fade-up-3 { animation: fadeUp var(--dur-slow) var(--ease-out) 240ms forwards; opacity: 0; }
+.fade-up-4 { animation: fadeUp var(--dur-slow) var(--ease-out) 320ms forwards; opacity: 0; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in { animation: fadeIn var(--dur-base) var(--ease-out) forwards; }
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+.scale-in { animation: scaleIn var(--dur-slow) var(--ease-out) forwards; }
+
+/* Screen-level cross-fade used by router */
+.screen-enter {
+  animation: screenFadeIn 420ms var(--ease-out) forwards;
+}
+@keyframes screenFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Result reveal sequence helpers */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(14px);
+}
+.reveal-item.revealed {
+  animation: revealItem 520ms var(--ease-out) forwards;
+}
+@keyframes revealItem {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Count-up number ticking uses plain text updates; a subtle glow pulses while counting */
+.counting {
+  text-shadow: 0 0 18px rgba(201, 169, 97, 0.35);
+}
+
+/* Hover lift utility */
+.hover-lift {
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.hover-lift:hover { transform: translateY(-2px); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
